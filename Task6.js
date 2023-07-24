@@ -1,11 +1,25 @@
-let a = 29
-for(let i=2; i<=a/2 ; i++){
-    if(a % i == 0){
-        console.log(a, "It is not a Prime No")
+let Prime = (number) => {
+//let a = 29
+for(let i=2; i<number/2 ; i++){
+    if(number % i == 0){
+        //console.log(a, "It is not a Prime No")
+        return["Not Prime", undefined]
+    }
+    else if(number == 1){
+        return["Not Prime", undefined]
     }
     else{
-        console.log(a, "It is a Prime No")
+        return["Prime", undefined]
+        //console.log(a, "It is a Prime No")
     }
+}
+}
+let[message, x] = Prime(29)
+if(message == "Prime"){
+     console.log("It is a Prime No")
+}
+else{
+    console.log("It is Not a Prime No")
 }
 
 let counteven = 0
