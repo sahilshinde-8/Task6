@@ -22,6 +22,8 @@ else{
     console.log("It is Not a Prime No")
 }
 
+//******************************************************************************************
+
 let counteven = 0
 let countodd = 0
 let countzero = 0
@@ -42,7 +44,7 @@ else{
 }
 console.log("Even Count ", counteven, " Odd Count ", countodd, " Zero Count " + countzero)
 
-
+//******************************************************************************************************************************
 
 let firstno = 0
 let secondno = 1
@@ -52,7 +54,6 @@ console.log("Fibonacci Series")
 console.log(" ",firstno)
 console.log(" ", secondno)
 
-//let n = 12
 
 let Fibonacci = (number2) =>{
 for(let i=2; i<number2; i++){
@@ -60,13 +61,10 @@ for(let i=2; i<number2; i++){
     let thirdno = firstno + secondno
     console.log(secondno);
     sum = sum + secondno
-    //console.log(" ", thirdno)
-   // return["third", thirdno]
     firstno = secondno
     secondno = thirdno
    
 }
-    //return["sum of Fbonacci series " + number2 + " Sum is " + sum]
     return[" " + sum]
 }
 
