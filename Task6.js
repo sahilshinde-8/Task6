@@ -46,14 +46,31 @@ console.log("Even Count ", counteven, " Odd Count ", countodd, " Zero Count " + 
 
 let firstno = 0
 let secondno = 1
+let sum = 0
 console.log("Fibonacci Series")
+
 console.log(" ",firstno)
 console.log(" ", secondno)
-let n = 12
-for(let i=2; i<n; i++){
+
+//let n = 12
+
+let Fibonacci = (number2) =>{
+for(let i=2; i<number2; i++){
     
     let thirdno = firstno + secondno
-    console.log(" ", thirdno)
+    console.log(secondno);
+    sum = sum + secondno
+    //console.log(" ", thirdno)
+   // return["third", thirdno]
     firstno = secondno
     secondno = thirdno
+   
 }
+    //return["sum of Fbonacci series " + number2 + " Sum is " + sum]
+    return[" " + sum]
+}
+
+
+let[message2, y] = Fibonacci(12)
+
+
